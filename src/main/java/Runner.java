@@ -1,3 +1,5 @@
+import java.awt.geom.Area;
+
 public class Runner {
 
     public static void main(String[] args) {
@@ -6,10 +8,10 @@ public class Runner {
         shoppingTrolleyDemo();
     }
 
-    public static void rectangleDemo(){
+    public static void rectangleDemo() {
+
         System.out.println("----------");
         System.out.println("Running rectangle tasks...");
-
 
 
         // 1. Create a new rectangle object
@@ -17,12 +19,16 @@ public class Runner {
         System.out.println(rectangle);
 
         // 2. Calculate the rectangle's area and store it in a variable
-//        int area = <CALL YOUR METHOD HERE>;
-//        System.out.println("The rectangle has an area of " + area);
+
+        int area = rectangle.calculateArea();
+
+
+        System.out.println("The rectangle has an area of " + area);
 
         // 3. Check if your rectangle is actually a square
-//        boolean isRectangle = <CALL YOUR METHOD HERE>
-//        System.out.println("Object is a square (true/false): " + isRectangle);
+        boolean isRectangle = rectangle.isRectangle();
+
+        System.out.println("Object is a square (true/false): " + isRectangle);
     }
 
     public static void computerDemo(){
@@ -30,11 +36,11 @@ public class Runner {
         System.out.println("Running computer tasks...");
 
         // 1. Create a new computer object
-//        Computer computer = <INSTANTIATE A NEW COMPUTER OBJECT HERE>
+        Computer computer = new Computer();
 
         // 2. Use a getter to find out how much storage the computer has
-//        int currentStorage = <CALL YOUR METHOD HERE>;
-//        System.out.println("Computer has " + currentStorage + "GB storage");
+        int currentStorage = <Current storage>;
+        System.out.println("Computer has " + currentStorage + "GB storage");
 
         // 3. Add more storage to the computer
 //        <CALL YOUR METHOD HERE>;
